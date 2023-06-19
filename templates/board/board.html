@@ -6,9 +6,9 @@
   <div class="row">
     <!-- 좌측 사이드 카테고리 시작 부분 -->
     <div class="col-lg-2">
-      <br />
-      <h4 style="color: #ECECEC">어캐찾앗누?</h4>
-      <br>
+      <br id="disallow-to-drag">
+      <h4 style="color: #ECECEC" id="disallow-to-drag">&nbsp;</h4>
+      <br id="disallow-to-drag">
       <div style="height:20px"></div>
       <table class="table" style="table-layout: fixed">
         <thead>
@@ -71,8 +71,7 @@
               <!-- 테이블 너비 비율 조정해놓은 부분 -->
               <colgroup>
                 <col width="10%" />
-                <col max-width="60%" />
-                <col width="15%" />
+                <col max-width="75%" />
                 <col width="15%" />
               </colgroup>
       
@@ -83,7 +82,6 @@
                   <th>종류</th>
                   <th>제목</th>
                   <th>작성자</th>
-                  <th>작성일시</th>
                 </tr>
               </thead>
       
@@ -111,7 +109,6 @@
                         >
                       </td>
                       <td class="text-center">익명</td>
-                      <td class="text-center">{{list.}}</td>
                     </tr>
                     {% endfor %}
                   </tbody>

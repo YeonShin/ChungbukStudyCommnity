@@ -15,6 +15,7 @@
     border-radius: 4px;
     font-weight: bold;
 }
+
 </style>
     <!-- 마이페이지 본문 부분 -->
     <div class=container>
@@ -49,24 +50,11 @@
                 
                 <!-- 검색 옵션 -->
                 <div class="form-floating form-control">
-                    <table style="justify-content: center;">
-                        <td style="width:18%">
-                           &nbsp;
-                        </td>
-                        <td>
-                            <input class="form-check-input" type="radio" value="" name="cond" id="subname" checked>
-                            <label class="form-check-label" for="subname">강의명&nbsp;</label>
-                        </td>
-                        <td>
-                            <input class="form-check-input" type="radio" value="" name="cond" id="profname">
-                            <label class="form-check-label" for="profname">교수명</label>
-                        </td>
-                    </table>
                     <!-- 추가할 강의 목록 -->
                     <div class="form-floating" id="select_subject">
                         <table class="table" id="sublist">
                             {% for lect in lectList %}
-                            <tr style="justify-content: center;">
+                            <tr style="justify-content: center;" id="subject_list">
                                 <td>
                                     <input class="form-check-input" type="checkbox" value="", name = "subject{{forloop.counter0}}" , id="subject{{forloop.counter0}}"> 
                                 </td>
